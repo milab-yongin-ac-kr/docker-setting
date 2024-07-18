@@ -58,7 +58,7 @@ docker run \
     -itd \
     --gpus all \
     --name $YOUR_CONTAINER_NAME \
-    -v /path/data:/app/data
+    -v /path/data:/app/data \
     -p 44746:22 \
     -p 8501:8051 \
     $YOUR_DOCKER_IMAGE \
