@@ -40,6 +40,7 @@ docker pull $YOUR_DOCKER_IMAGE
 ```
 
 * 통합된 파이토치 딥러닝 환경: https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch
+* 위의 링크의 tag 페이지에서 image 다운
 
 ## 도커 이미지 리스트 확인
 ```
