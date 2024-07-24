@@ -97,5 +97,5 @@ docker ps
 
 ```
 docker kill $YOUR_CONTAINER_NAME
-docker rm 
+docker rm $YOUR_CONTAINER_NAME
 ```
