@@ -99,3 +99,13 @@ docker ps
 docker kill $YOUR_CONTAINER_NAME
 docker rm $YOUR_CONTAINER_NAME
 ```
+
+## Dockerfile 빌드
+
+필수적인 패키지 설치를 위해 제공된 Dockerfile을 사용할 수 있음
+
+```
+docker build -t $repository-name:$image-name .
+```
+제공된 Dockerfile은 cuda11.8 이미지, python3.10을 기준으로 작성되었음, 따라서 필요에 따라 변형에서 사용가능함
+
