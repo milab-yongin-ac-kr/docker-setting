@@ -45,7 +45,14 @@ RUN ln -s /usr/bin/python3.10 /usr/bin/python && \
     ln -s /usr/local/bin/pip3.10 /usr/bin/pip
 
 # Install pip packages
-RUN pip install gpustat && \
+RUN pip install gpustat opencv-python && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install additional apt packages
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    libsm6 \
+    libxext6 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
@@ -53,6 +60,7 @@ WORKDIR /workspace
 
 # Default command
 CMD ["/bin/bash"]
+
 
 
 
